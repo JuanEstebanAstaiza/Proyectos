@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFObject Example</title>
+</head>
+<body>
+    <h1>PDFObject Embed Example</h1>
+
+    <div id="pdf-viewer" style="height: 500px;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"></script>
+    <script>
+        const pdfUrl = 'https://drive.google.com/uc?export=download&id=1Ibi_bI1xtk70KCX2yzrhYGfa5Psr5bhu';
+        PDFObject.embed(pdfUrl, "#pdf-viewer");
+    </script>
+</body>
+</html>
